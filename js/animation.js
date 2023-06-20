@@ -10,3 +10,19 @@ gsap.to('.animation-element', {
     repeat: -1, // 重複次數（-1 表示無限重複）
     yoyo: true, // 是否反向播放動畫
 });
+
+gsap.to('.animation img:nth-child(2)', {
+    // 第二個 img 元素的動畫設定
+    duration: 1,
+    rotation: 360,
+    repeat: -1,
+    yoyo: true,
+});
+
+gsap.to('.animation img:nth-child(3)', {
+    // 第三個 img 元素的動畫設定
+    duration: 0.5,
+    opacity: 0,
+    repeat: -1,
+    yoyo: true,
+});
