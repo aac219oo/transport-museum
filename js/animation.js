@@ -77,7 +77,7 @@ gsap.set('.yellow-0,.yellow-6', { opacity: 1 });
 var selectors1 = '.yellow-1, .yellow-2, .yellow-3, .yellow-4, .yellow-5';
 var selectors2 = '.yellow-7, .yellow-8, .yellow-9, .yellow-10,yellow-17';
 var selectors3 =
-    '.yellow-11, .yellow-12, .yellow-13, .yellow-14, .yellow-15,yellow-16';
+    '.yellow-11, .yellow-12, .yellow-13, .yellow-14, .yellow-15,.yellow-16';
 // var selectors4 =
 //     '.yellow-1, .yellow-2, .yellow-3, .yellow-4, .yellow-5, .yellow-6, .yellow-7, .yellow-8, .yellow-9, .yellow-10, .yellow-11, .yellow-12, .yellow-13, .yellow-14, .yellow-15, .yellow-16, .yellow-17';
 
