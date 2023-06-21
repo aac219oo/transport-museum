@@ -14,7 +14,7 @@
 .animation-label {
     position: absolute;
     width: 50%;
-    top: 20%;
+    top: 17%;
 }
 .animation-shadow::after{
     content: '';
