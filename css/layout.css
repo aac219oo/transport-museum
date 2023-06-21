@@ -4,10 +4,16 @@ body {
 .no-flex-grow {
     flex-grow: 0;
 }
+
 .logo {
+    width: 100%;
     max-width: 50vw;
 }
-
+.navbar.bg {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px #306dc4;
+}
 .nav-link {
     display: flex;
     width: 130px;
@@ -26,12 +32,35 @@ body {
 .nav-underline .show > .nav-link {
     border-bottom-color: #ffc107;
 }
+.offcanvas {
+    background-color: #1c54a1;
+}
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-.close-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M18 6L6 18M6 6l12 12'/%3e%3c/svg%3e");
+.btn-close {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: 20px;
 }
+.close-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+}
+.fixed-btns {
+    position: fixed;
+    right: 6%;
+    bottom: 50px;
+    z-index: 999;
+}
+.btn-box {
+    display: block;
+    text-align: center;
+}
+.conversation {
+    margin-bottom: 2rem;
+}
+
 @media (min-width: 1201px) {
     .dropdown:hover .dropdown-menu {
         display: block;
@@ -54,25 +83,6 @@ body {
     .nav-underline .nav-link {
         border-bottom-color: #ffffff;
     }
-    .navbar-collapse {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        height: 100vh;
-        width: 300px;
-        max-width: 100%;
-        overflow: hidden;
-        transition: right 0.3s ease-in-out;
-        background-color: #1c54a1;
-        z-index: 1000;
-    }
-
-    .navbar-collapse.show {
-        right: 0;
-    }
-    /* .collapse:not(.show) {
-        display: block;
-    } */
     .nav-link {
         width: auto;
     }
@@ -94,5 +104,16 @@ body {
             opacity: 1;
             transform: translateY(0);
         }
+    }
+
+    .fixed-btns {
+        right: 4%;
+        bottom: 50px;
+    }
+    .conversation img {
+        width: 60%;
+    }
+    .gotop img {
+        width: 40%;
     }
 }

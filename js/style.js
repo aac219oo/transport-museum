@@ -6,13 +6,46 @@ $(document).ready(function () {
             $('.dropdown').on('hide.bs.dropdown', function () {
                 return false;
             });
-        } else {
-            $('.dropdown').on('hide.bs.dropdown', function () {
-                return true;
-            });
         }
     });
-    $('.navbar-toggler').on('click', function () {
-        $('.navbar-collapse').toggleClass('show');
+
+    $(window).on('scroll', function () {
+        nowloc = $(window).scrollTop();
+        if (nowloc >= 200) {
+            $('nav.navbar').addClass('bg');
+        } else {
+            $('nav.navbar').removeClass('bg');
+        }
     });
+
+    // 获取按钮元素
+    var $gotop = $('.gotop');
+
+    // // 到上層設定
+    $gotop.on('click', function () {
+        $('html,body').animate(
+            {
+                scrollTop: 0,
+            },
+            500
+        );
+    });
+
+    // 获取原始图片路径和悬停时的图片路径
+    var originalImage = $gotop.find('img').attr('src');
+    var hoverImage = './images/index/top_2.png'; // 替换为悬停时的图片路径
+
+    // 鼠标悬停时切换图片
+    $gotop.hover(
+        function () {
+            // 鼠标进入时更换图片
+            console.log('in');
+            $(this).find('img').attr('src', hoverImage);
+        },
+        function () {
+            // 鼠标离开时恢复原始图片
+            console.log('out');
+            $(this).find('img').attr('src', originalImage);
+        }
+    );
 });
