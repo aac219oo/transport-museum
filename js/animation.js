@@ -55,7 +55,7 @@ gsap.to('.animation-drone', {
     yoyo: true, // 是否反向播放動畫
 });
 
-// 创建 TweenMax 动画来控制伪元素的样式属性
+// 漸層閃爍
 var tl = new TimelineLite();
 
 tl.to('.animation-area span', {
@@ -67,4 +67,39 @@ tl.to('.animation-area span', {
     duration: 0.5,
     ease: 'power1.out',
     delay: 1.5,
+});
+
+// 使用 gsap 庫進行動畫
+gsap.set('.animation-yellow > *', { opacity: 0 }); // 將所有子元素設置為透明度為0
+
+gsap.set('.yellow-0,.yellow-6', { opacity: 1 });
+
+var selectors1 = '.yellow-1, .yellow-2, .yellow-3, .yellow-4, .yellow-5';
+var selectors2 = '.yellow-7, .yellow-8, .yellow-9, .yellow-10,yellow-17';
+var selectors3 =
+    '.yellow-11, .yellow-12, .yellow-13, .yellow-14, .yellow-15,yellow-16';
+// var selectors4 =
+//     '.yellow-1, .yellow-2, .yellow-3, .yellow-4, .yellow-5, .yellow-6, .yellow-7, .yellow-8, .yellow-9, .yellow-10, .yellow-11, .yellow-12, .yellow-13, .yellow-14, .yellow-15, .yellow-16, .yellow-17';
+
+gsap.to(selectors1, {
+    opacity: 1,
+    duration: 4,
+    repeat: -1,
+    yoyo: true,
+    delay: Math.random() * 2, // 隨機延遲時間
+});
+
+gsap.to(selectors2, {
+    opacity: 1,
+    duration: 2,
+    repeat: -1,
+    yoyo: true,
+    delay: Math.random() * 5, // 隨機延遲時間
+});
+gsap.to(selectors3, {
+    opacity: 1,
+    duration: 3,
+    repeat: -1,
+    yoyo: true,
+    delay: Math.random() * 7, // 隨機延遲時間
 });
