@@ -28,7 +28,8 @@
     display: block;
     position: absolute;
     z-index: -2;
-    transform: rotate3d(3, -1, -2, -74deg);
+    transform: rotate(74deg);
+    clip-path: polygon(20% 0, 80% 0, 100% 100%, 0% 100%);
 }
 
 .animation-yellow {
@@ -680,9 +681,9 @@
         width: 90%;
     }
     .accordion-button {
-        font-size: min(max(0.1rem, 1.2vw), 1.3rem);
+        font-size: min(max(0.1rem, 4vw), 1.3rem);
     }
     .accordion-body {
-        font-size: min(max(0.1rem, 0.1vw), 0.1rem);
+        font-size: min(max(0.1rem, 3vw), 1rem);
     }
 }
