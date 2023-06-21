@@ -7,8 +7,7 @@ body {
 .logo {
     max-width: 50vw;
 }
-.nav-item {
-}
+
 .nav-link {
     display: flex;
     width: 130px;
@@ -27,7 +26,12 @@ body {
 .nav-underline .show > .nav-link {
     border-bottom-color: #ffc107;
 }
-
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.close-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M18 6L6 18M6 6l12 12'/%3e%3c/svg%3e");
+}
 @media (min-width: 1201px) {
     .dropdown:hover .dropdown-menu {
         display: block;
@@ -44,6 +48,12 @@ body {
     background-color: transparent;
 }
 @media (max-width: 1200px) {
+    .nav-item {
+        text-align: end;
+    }
+    .nav-underline .nav-link {
+        border-bottom-color: #ffffff;
+    }
     .navbar-collapse {
         position: fixed;
         top: 0;
@@ -54,14 +64,15 @@ body {
         overflow: hidden;
         transition: right 0.3s ease-in-out;
         background-color: #1c54a1;
+        z-index: 1000;
     }
 
     .navbar-collapse.show {
         right: 0;
     }
-    .collapse:not(.show) {
+    /* .collapse:not(.show) {
         display: block;
-    }
+    } */
     .nav-link {
         width: auto;
     }
