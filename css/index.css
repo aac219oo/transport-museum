@@ -1,4 +1,4 @@
-.animation{
+.animation {
     display: flex;
     width: fit-content;
     position: relative;
@@ -6,17 +6,19 @@
     z-index: -1;
 }
 
-.animation-bg{
+.animation-bg {
     position: relative;
     width: 100%;
     z-index: -2;
 }
+
 .animation-label {
     position: absolute;
     width: 50%;
     top: 17%;
 }
-.animation-shadow::after{
+
+.animation-shadow::after {
     content: '';
     display: block;
     position: absolute;
@@ -26,16 +28,17 @@
 
 .animation-yellow {
     position: absolute;
-    width: 27%;
-    top: 44%;
-    left: 7%;
+    width: 32%;
+    top: 46%;
+    left: 5%;
+    z-index: 1;
 }
 
-.animation-shadow.animation-yellow::after{
-    top: 33%;
-    left: 12%;
-    width: 76%;
-    height: 87%;
+.animation-shadow.animation-yellow::after {
+    top: 28%;
+    left: 17%;
+    width: 66%;
+    height: 80%;
     background-image: linear-gradient(45deg, rgba(37, 130, 193, 0.3), rgb(37, 97, 120));
 
 }
@@ -43,127 +46,148 @@
 .animation-yellow img {
     position: absolute;
 }
+
 .animation-yellow .yellow-0 {
     position: relative;
     z-index: -1;
     width: 100%;
 }
+
 .animation-yellow .yellow-1 {
     z-index: 0;
     top: 30%;
     left: 90%;
     width: 12%;
 }
+
 .animation-yellow .yellow-2 {
     z-index: 0;
     top: 25%;
     left: 83%;
     width: 14%;
 }
+
 .animation-yellow .yellow-3 {
     z-index: 1;
     top: 41%;
     left: 41%;
     width: 11%;
 }
+
 .animation-yellow .yellow-4 {
     z-index: -0;
     top: 20%;
     left: 53%;
     width: 12%;
 }
+
 .animation-yellow .yellow-5 {
     z-index: -0;
     top: 35%;
     left: 31%;
     width: 12%;
 }
+
 .animation-yellow .yellow-6 {
     z-index: -1;
     top: 26%;
     left: 45%;
     width: 38%;
 }
+
 .animation-yellow .yellow-7 {
     z-index: -0;
     top: 37%;
     left: 34%;
     width: 18%;
 }
+
 .animation-yellow .yellow-8 {
     z-index: -0;
     top: 30%;
     left: 34%;
     width: 12%;
 }
+
 .animation-yellow .yellow-9 {
     z-index: -0;
     top: 43%;
     left: 26%;
     width: 13%;
 }
+
 .animation-yellow .yellow-10 {
     z-index: -0;
     top: 28%;
     left: 34%;
     width: 12%;
 }
+
 .animation-yellow .yellow-11 {
     z-index: -0;
     top: 28%;
     left: 44%;
     width: 12%;
 }
+
 .animation-yellow .yellow-12 {
     z-index: -0;
     top: 30%;
     left: 48%;
     width: 15%;
 }
+
 .animation-yellow .yellow-13 {
     z-index: -0;
     top: 30%;
     left: 52%;
     width: 15%;
 }
+
 .animation-yellow .yellow-14 {
     z-index: -0;
     top: 30%;
     left: 57%;
     width: 15%;
 }
+
 .animation-yellow .yellow-15 {
     z-index: -0;
     top: 30%;
     left: 59%;
     width: 15%;
 }
+
 .animation-yellow .yellow-16 {
     z-index: -0;
     top: 30%;
     left: 62%;
     width: 15%;
 }
+
 .animation-yellow .yellow-17 {
     z-index: -0;
     top: 43%;
     left: 29%;
     width: 19%;
 }
+
 .animation-app {
     position: absolute;
     width: 5.5%;
-    top: 41%;
-    left: 45%;
+    top: 40%;
+    left: 46%;
     z-index: 2;
 }
-.animation-cloud{
+
+.animation-cloud {
     position: absolute;
     width: 6%;
     top: 75%;
     left: 36%;
     z-index: 1;
 }
+
 .animation-orange-boat {
     position: absolute;
     width: 14%;
@@ -171,17 +195,18 @@
     left: 58%;
     z-index: 1;
 }
+
 .animation-orange {
     position: absolute;
-    width: 31%;
-    top: 35.3%;
-    left: 55.3%;
+    width: 34%;
+    top: 34.9%;
+    left: 52.5%;
 }
 
-.animation-shadow.animation-orange::after{
-    top: -18%;
-    left: 9%;
-    width: 82%;
+.animation-shadow.animation-orange::after {
+    top: -15%;
+    left: 20%;
+    width: 71%;
     height: 150%;
     background-image: linear-gradient(45deg, rgba(27, 91, 155, 0.45), rgb(12, 44, 104));
 
@@ -189,16 +214,17 @@
 
 .animation-purple {
     position: absolute;
-    width: 18%;
-    top: 47%;
-    left: 33%;
+    width: 27%;
+    top: 44%;
+    left: 27.5%;
+    z-index: -1;
 }
 
-.animation-shadow.animation-purple::after{
-    top: 38%;
-    left: 13%;
-    width: 75%;
-    height: 80%;
+.animation-shadow.animation-purple::after {
+    top: 41%;
+    left: 26%;
+    width: 56%;
+    height: 77%;
     background-image: linear-gradient(45deg, rgba(37, 130, 193, 0.3), rgb(37, 97, 120));
 }
 
@@ -209,6 +235,7 @@
     left: 45%;
     z-index: 1;
 }
+
 .animation-green {
     position: absolute;
     width: 25%;
@@ -216,7 +243,7 @@
     left: 49%;
 }
 
-.animation-shadow.animation-green::after{
+.animation-shadow.animation-green::after {
     top: 7%;
     left: 19%;
     width: 72%;
@@ -226,36 +253,116 @@
 
 .animation-blue {
     position: absolute;
-    width: 19%;
-    top: 51%;
-    left: 77%;
+    width: 30%;
+    top: 54%;
+    left: 69%;
 }
-.animation-shadow.animation-blue::after{
-    top: 24%;
-    left: 13%;
-    width: 76%;
-    height: 99%;
+
+.animation-shadow.animation-blue::after {
+    top: 10%;
+    left: 34%;
+    width: 48%;
+    height: 94%;
     background-image: linear-gradient(45deg, rgba(16, 70, 124, 0.45), rgb(11, 38, 90));
 }
 
 .animation-pink {
     position: absolute;
-    width: 15%;
-    top: 19%;
-    left: 80%;
+    width: 20%;
+    top: 18%;
+    left: 78%;
 }
-.animation-shadow.animation-pink::after{
-    top: 17%;
-    left: 18%;
-    width: 71%;
-    height: 102%;
+
+.animation-shadow.animation-pink::after {
+    top: 19%;
+    left: 4%;
+    width: 65%;
+    height: 98%;
     background-image: linear-gradient(45deg, rgba(10, 68, 126, 0.35), rgb(11, 38, 90));
 }
-.animation-drone {    
+
+.animation-drone {
     position: absolute;
     width: 5.5%;
     top: 30%;
     left: 92%;
     -webkit-filter: drop-shadow(0 60px 0 rgba(7, 3, 49, 0.4));
     filter: drop-shadow(0 60px 0 rgba(7, 3, 49, 0.4))
+}
+
+.animation-area span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: colorFade 2s ease-in-out infinite;
+    clip-path: polygon(0% 0%, 100% 0%, 113% 62%, 50% 100%, 0% 70%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    opacity: 0;
+}
+
+@keyframes colorFade {
+    0% {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+        opacity: 0.2;
+    }
+
+    50% {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+        opacity: 1;
+    }
+
+    100% {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+        opacity: 0.2;
+    }
+}
+
+.animation-area.animation-yellow span {
+    top: 10%;
+    left: 10.1%;
+    width: 80.4%;
+    height: 72%;
+}
+
+.animation-area.animation-purple span {
+    top: 19.3%;
+    left: 21.3%;
+    width: 68.1%;
+    height: 72.5%;
+    clip-path: polygon(0% 0%, 100% 0%, 113% 62%, 50% 100%, 0% 70%);
+}
+
+.animation-area.animation-green span {
+    top: 12.3%;
+    left: 11.3%;
+    width: 87.1%;
+    height: 72.5%;
+    clip-path: polygon(0% 0%, 98% 0%, 98% 56%, 48% 100%, 0% 55%);
+}
+
+.animation-area.animation-orange span {
+    top: -13%;
+    left: 9.7%;
+    width: 99%;
+    height: 100%;
+    clip-path: polygon(0% 0%, 91% 0%, 91% 57%, 45% 100%, 0% 59%);
+}
+
+.animation-area.animation-blue span {
+    top: -25%;
+    left: 26%;
+    width: 61%;
+    height: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 113% 66%, 50% 97%, 0% 71%);
+}
+
+.animation-area.animation-pink span {
+    top: -15%;
+    left: 0%;
+    width: 75%;
+    height: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 113% 62%, 50% 100%, 0% 70%);
 }

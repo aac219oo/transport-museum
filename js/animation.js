@@ -44,13 +44,27 @@ gsap.to('.animation-green-boat', {
 });
 
 gsap.to('.animation-drone', {
-    duration: 1.3, // 動畫持續時間（以秒為單位）
+    duration: 2.5, // 動畫持續時間（以秒為單位）
     x: 0, // X 軸移動的距離
-    y: '220%', // Y 軸移動的距離
+    y: '150%', // Y 軸移動的距離
     // rotation: 360, // 旋轉角度（度數）
     // opacity: 0.5, // 不透明度
     // scale: 1.5, // 縮放比例
     ease: 'power4.inOut', // 動畫緩動函數（可根據需要選擇不同的函數）
     repeat: -1, // 重複次數（-1 表示無限重複）
     yoyo: true, // 是否反向播放動畫
+});
+
+// 创建 TweenMax 动画来控制伪元素的样式属性
+var tl = new TimelineLite();
+
+tl.to('.animation-area span', {
+    opacity: 0.2,
+    duration: 0.5,
+    ease: 'power1.in',
+}).to('.animation-area span', {
+    opacity: 0,
+    duration: 0.5,
+    ease: 'power1.out',
+    delay: 1.5,
 });
