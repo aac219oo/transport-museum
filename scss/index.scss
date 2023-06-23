@@ -491,6 +491,12 @@
 
 .carousel-box {
     position: relative;
+    background-image: url(../images/index/全景圖區塊/背景圖.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 0;
+    padding-bottom: 70%;
 }
 
 .carousel-bg {
@@ -503,7 +509,9 @@
 }
 
 .carousel {
+    width: 93%;
     margin: 0 auto;
+    padding-top: 9%;
 }
 
 .accordion {
@@ -782,10 +790,6 @@
         left: 6.5%;
     }
 
-    .carousel {
-        max-width: 80%;
-    }
-
     .accordion {
         position: sticky;
         margin-top: 3rem;
@@ -869,10 +873,6 @@
 
     .carousel-container {
         margin-top: 4rem;
-    }
-
-    .carousel {
-        width: 90%;
     }
 
     .slick-prev,
