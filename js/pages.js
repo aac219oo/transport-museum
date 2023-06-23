@@ -43,4 +43,24 @@ $(document).ready(function () {
             }
         );
     });
+
+    // information.html更換連結圖片
+    // 鼠标悬停时更换图片
+    $('.OfficialWeb').hover(
+        function () {
+            $(this).attr('src', './images/pages/information/官方網站-2.png');
+        },
+        function () {
+            $(this).attr('src', './images/pages/information/官方網站.png');
+        }
+    );
+
+    $('.facebook').hover(
+        function () {
+            $(this).attr('src', './images/pages/information/facebook-2.png');
+        },
+        function () {
+            $(this).attr('src', './images/pages/information/facebook.png');
+        }
+    );
 });
