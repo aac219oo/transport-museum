@@ -1,13 +1,13 @@
 $(document).ready(function () {
     // JavaScript (如果需要關閉下拉選單時消失，請添加以下程式碼)
-    $(window).resize(function () {
-        var windowWidth = $(window).width();
-        if (windowWidth > 1200) {
-            $('.dropdown').on('hide.bs.dropdown', function () {
-                return false;
-            });
-        }
-    });
+    // $(window).resize(function () {
+    //     var windowWidth = $(window).width();
+    //     if (windowWidth > 1200) {
+    //         $('.dropdown').on('hide.bs.dropdown', function () {
+    //             return false;
+    //         });
+    //     }
+    // });
 
     $(window).on('scroll', function () {
         updateNavbar();
@@ -36,7 +36,9 @@ $(document).ready(function () {
             $('nav.navbar').removeClass('bg');
         }
     }
+});
 
+$(window).on('load', function () {
     // 到上層設定
 
     // 获取原始图片路径和悬停时的图片路径
@@ -62,6 +64,5 @@ $(document).ready(function () {
             },
             200
         );
-        console.log('t');
     });
 });
