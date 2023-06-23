@@ -919,10 +919,10 @@
     }
 
     .accordion-button {
-        font-size: min(max(0.1rem, 4vw), 1.3rem);
+        font-size: min(max(1rem, 5vw), 2.5rem);
     }
 
     .accordion-body {
-        font-size: min(max(0.1rem, 3vw), 1rem);
+        font-size: min(max(0.8rem, 4vw), 1.5rem);
     }
 }

@@ -15,7 +15,7 @@ body {
 
 .logo {
   width: 100%;
-  max-width: 50vw;
+  max-width: 45vw;
 }
 
 .navbar.bg {
@@ -139,5 +139,9 @@ body {
 @media (max-width: 576px) {
   .offcanvas.offcanvas-end {
     width: 300px;
+  }
+  .offcanvas-body {
+    overflow-y: scroll;
+    padding-bottom: 300px;
   }
 }/*# sourceMappingURL=layout.css.map */
