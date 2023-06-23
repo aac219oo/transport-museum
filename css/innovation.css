@@ -1,0 +1,168 @@
+body {
+    background-color: #e4f8ff;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-list a {
+    margin: 0 10px;
+}
+
+.nav-list img {
+max-height: 52px;
+}
+
+.btn-1 {
+    opacity: 0;
+    position: absolute;
+    transition: all .2s;
+}
+
+.btn-2:hover {
+    opacity: 0;
+}
+
+.btn-1:hover {
+    opacity: 1;
+}
+
+.block-1 {
+    margin-top: 30px;
+}
+
+.main-title {
+    max-width: 2000px;
+    width: 100%;
+}
+
+.text-area {
+    margin: 10px 120px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 2px;
+    text-indent: 3rem;
+}
+
+.block-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 20px;
+    
+}
+
+.block-2 div:first-child {
+    position: relative;
+}
+
+.block-2 div:first-child::after {
+    content: '';
+    position: absolute;
+    right: -47px;
+    top: -17px;
+    max-width: 931px;
+    width: 100%;
+    height: 107px;
+    background-color: #1cc7fb;
+    clip-path: polygon(97% 0, 100% 12%, 100% 37%, 99.5% 37%, 99% 13%, 97% 4%, 0 4%, 0 0, 23% 0);
+    z-index: 9999;
+}
+
+.subtitle {
+    position: relative;
+    margin: 0 20px;
+    padding: 0 20px;
+    max-width: 1000px;
+    width: 100%;
+    /* min-height: 50px; */
+    font-weight: 600;
+    /* clip-path: polygon(100% 0, 97% 100%, 2% 100%, 0 73%, 0 0);
+    background-color: #0168b7; */
+    line-height: 50px;
+    text-align: left;
+    z-index: 999;
+}
+
+.subtitle::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 1000px;
+    width: 100%;
+    min-height: 50px;
+    clip-path: polygon(100% 0, 97% 100%, 2% 100%, 0 73%, 0 0);
+    background-color: #0087b4;
+    z-index: -888;
+}
+
+.subtitle::after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    bottom: -3px;
+    max-width: 733px;
+    width: 100%;
+    min-height: 50px;
+    clip-path: polygon(99% -2%, 97% 102%, 2.5% 100%, 0 77%, 0 0);
+    background-color: #0168b7;
+    z-index: -999;
+}
+
+.subtitle span {
+    margin-right: 10px;
+    color: #fdf401;
+}
+
+
+.image-area {
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(./images/pages/Innovation/基隆港圖片外框.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 500px;
+    max-width: 1300px;
+}
+
+.img-1, .img-2 {
+    position: relative;
+    top: 20px;
+    left: 0;
+}
+
+.img-1 img {
+    max-width: 500px;
+    width: 100%;
+}
+
+.image-area p {
+    margin-top: 10px;
+    color: #626262;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.img-2 {
+    position: relative;
+    padding-bottom: 24.25%; 
+    height: 0;
+}
+
+/* .img-2 iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
