@@ -5,7 +5,7 @@ body {
 
 .text-indent {
   text-indent: 2.5rem;
-  line-height: 2.5rem;
+  line-height: 3rem;
 }
 
 .banner {
@@ -37,6 +37,9 @@ body {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
 }
+.content-area-label .btn-link {
+  flex-basis: 200px;
+}
 .content-area-label::before {
   content: "";
   position: absolute;
@@ -61,7 +64,8 @@ body {
   -webkit-clip-path: polygon(0 0, 98% 0, 100% 35%, 100% 100%, 99.8% 100%, 99.8% 38%, 97.9% 5%, 0 5%);
           clip-path: polygon(0 0, 98% 0, 100% 35%, 100% 100%, 99.8% 100%, 99.8% 38%, 97.9% 5%, 0 5%);
 }
-.content-area-label .content-area-label-txt {
+
+.content-area-label-txt {
   display: block;
   width: -moz-fit-content;
   width: fit-content;
@@ -125,8 +129,14 @@ body {
   .nav-img {
     height: 50px;
   }
+  .content-area-label-txt {
+    width: 90%;
+  }
 }
 @media (max-width: 576px) {
+  .content-area-label .btn-link {
+    flex-basis: 150px;
+  }
   .detail-pic {
     width: 90%;
   }
