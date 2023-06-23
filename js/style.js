@@ -10,13 +10,32 @@ $(document).ready(function () {
     });
 
     $(window).on('scroll', function () {
-        nowloc = $(window).scrollTop();
+        updateNavbar();
+    });
+
+    // 當錨點被點擊時，手動觸發一次 scroll 事件
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        $('html, body').animate(
+            {
+                scrollTop: $(target).offset().top,
+            },
+            500,
+            function () {
+                $(window).trigger('scroll');
+            }
+        );
+    });
+
+    function updateNavbar() {
+        var nowloc = $(window).scrollTop();
         if (nowloc >= 200) {
             $('nav.navbar').addClass('bg');
         } else {
             $('nav.navbar').removeClass('bg');
         }
-    });
+    }
 
     // 获取按钮元素
     var $gotop = $('.gotop');
