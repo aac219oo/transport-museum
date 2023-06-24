@@ -70,9 +70,12 @@ tl.to('.animation-area span', {
 });
 
 // 使用 gsap 庫進行動畫
-gsap.set('.animation-yellow > *', { opacity: 0 }); // 將所有子元素設置為透明度為0
+gsap.set('.animation-yellow > *', { opacity: 0, scale: 0.5 }); // 將所有子元素設置為透明度為0
 
-gsap.set('.yellow-0,.yellow-6', { opacity: 1 });
+gsap.set('.yellow-0,.yellow-6,.animation-yellow span', {
+    opacity: 1,
+    scale: 1,
+});
 
 var selectors1 = '.yellow-1, .yellow-2, .yellow-3, .yellow-4, .yellow-5';
 var selectors2 = '.yellow-7, .yellow-8, .yellow-9, .yellow-10,yellow-17';
@@ -83,6 +86,7 @@ var selectors3 =
 
 gsap.to(selectors1, {
     opacity: 1,
+    scale: 1,
     duration: 4,
     repeat: -1,
     yoyo: true,
@@ -91,6 +95,7 @@ gsap.to(selectors1, {
 
 gsap.to(selectors2, {
     opacity: 1,
+    scale: 1,
     duration: 2,
     repeat: -1,
     yoyo: true,
@@ -98,6 +103,7 @@ gsap.to(selectors2, {
 });
 gsap.to(selectors3, {
     opacity: 1,
+    scale: 1,
     duration: 3,
     repeat: -1,
     yoyo: true,

@@ -37,7 +37,7 @@ body {
 
 .nav-link {
     display: flex;
-    width: 130px;
+    width: 110px;
     text-align: center;
     font-weight: 600;
     align-items: center;
@@ -147,23 +147,16 @@ body {
     }
 
     .fixed-btns {
-        right: 4%;
-        bottom: 50px;
+        right: 3%;
+        bottom: 70px;
     }
 
     .conversation img {
         width: 60%;
     }
-
-    .gotop img {
-        width: 40%;
-    }
 }
 
 @media (max-width: 576px) {
-    .offcanvas.offcanvas-end {
-        width: 300px;
-    }
     .offcanvas-body {
         overflow-y: scroll;
         padding-bottom: 300px;

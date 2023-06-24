@@ -2,7 +2,7 @@ $(document).ready(function () {
     $('.nav li').click(function () {
         indexNo = $(this).index();
         wdth = $(window).width();
-        if (wdth < 500) {
+        if (wdth < 576) {
             targetTop =
                 $('.content-area-label-txt').eq(indexNo).offset().top - 90;
         } else {

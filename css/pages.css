@@ -3,6 +3,10 @@ body {
   background-color: #e3f9ff;
 }
 
+.conversation {
+  display: none;
+}
+
 .text-indent {
   text-indent: 2.5rem;
   line-height: 3rem;
