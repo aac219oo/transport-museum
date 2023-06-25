@@ -24,7 +24,7 @@ $(document).ready(function () {
         .split('.')
         .shift();
     // 按鍵數量
-    var buttonCount = $('.nav .nav-item').length;
+    // var buttonCount = $('.nav .nav-item').length;
 
     $('.nav .nav-item').each(function (index) {
         // 根據當前網頁的檔名動態設置圖片路徑
