@@ -65,6 +65,27 @@ $(document).ready(function () {
                     'data-bs-padding-right'
                 );
             });
+
+            // 手機子選單效果
+            function updateNavitem() {
+                var windowWidth = $(window).width();
+
+                $('.nav-link').each(function () {
+                    var $this = $(this);
+                    var hasDropdown = $this.next('.dropdown-menu').length > 0;
+
+                    if (windowWidth > 1200 && hasDropdown) {
+                        $this.removeAttr('data-bs-toggle');
+                        $this.removeAttr('aria-expanded');
+                    } else if (windowWidth < 1200 && hasDropdown) {
+                        $this.attr('data-bs-toggle', 'dropdown');
+                        $this.attr('aria-expanded', 'false');
+                    }
+                });
+            }
+
+            $(window).on('resize', updateNavitem);
+            $(window).on('load resize', updateNavitem);
         },
         error: function (xhr, status, error) {
             console.log('Error loading header:', error);
@@ -78,26 +99,35 @@ $(document).ready(function () {
 
     function updateNavbar() {
         var nowloc = $(window).scrollTop();
-        if (nowloc >= 200) {
+        if (nowloc >= 300) {
             $('nav.navbar').addClass('bg');
         } else {
             $('nav.navbar').removeClass('bg');
         }
     }
+
+    // // 获取URL中的锚点
+    // let hash = window.location.hash;
+    // // 获取目标元素
+    // let target = $(hash);
+    // // 计算滑动的偏移量
+    // let offset = $(window).width() < 576 ? 90 : 160; // 在窗口宽度小于576px时偏移量为90，否则为165
+    // // 执行滑动
+    // $('html, body').scrollTop(target.offset().top - offset);
 });
 
-$(window).on('load', function () {
-    // 获取URL中的锚点
-    let hash = window.location.hash;
-    // 获取目标元素
-    let target = $(hash);
-    // 计算滑动的偏移量
-    let offset = $(window).width() < 576 ? 90 : 160; // 在窗口宽度小于576px时偏移量为90，否则为165
-    // 执行滑动动画
-    $('html, body').animate(
-        {
-            scrollTop: target.offset().top - offset,
-        },
-        300
-    ); // 修改滑动的速度，单位为毫秒
-});
+// $(window).on('load', function () {
+//     // 获取URL中的锚点
+//     let hash = window.location.hash;
+//     // 获取目标元素
+//     let target = $(hash);
+//     // 计算滑动的偏移量
+//     let offset = $(window).width() < 576 ? 90 : 160; // 在窗口宽度小于576px时偏移量为90，否则为165
+//     // 执行滑动动画
+//     $('html, body').animate(
+//         {
+//             scrollTop: target.offset().top - offset,
+//         },
+//         300
+//     ); // 修改滑动的速度，单位为毫秒
+// });

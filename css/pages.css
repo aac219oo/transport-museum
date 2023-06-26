@@ -12,6 +12,10 @@ body {
   line-height: 3rem;
 }
 
+.nav-img {
+  height: 55px;
+}
+
 .banner {
   text-align: center;
 }
@@ -158,20 +162,23 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .nav-img {
+    height: 40px;
+  }
   .detail-pic {
     flex-basis: auto;
     width: 50%;
   }
 }
 @media (max-width: 768px) {
-  .nav-img {
-    height: 50px;
-  }
   .content-area-label-txt {
     width: 90%;
   }
 }
 @media (max-width: 576px) {
+  .nav-img {
+    height: 20px;
+  }
   .content-area-label .btn-link {
     flex-basis: 150px;
   }
