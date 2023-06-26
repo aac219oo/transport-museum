@@ -8,6 +8,9 @@ body {
     text-indent: 2.5rem;
     line-height: 3rem;
 }
+.fs-style {
+    font-size: 1.25rem;
+}
 .nav-img {
     height: 55px;
 }
@@ -167,6 +170,12 @@ body {
 }
 
 @media (max-width: 768px) {
+    .text-indent {
+        line-height: 2.3rem;
+    }
+    .fs-style {
+        font-size: 1rem;
+    }
     .content-area-label-txt {
         width: 90%;
     }
