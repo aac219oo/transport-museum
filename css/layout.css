@@ -18,8 +18,13 @@ body {
   max-width: 45vw;
 }
 
+.navbar {
+  transition: all 0.5s ease-in-out;
+}
+
 .navbar.bg {
-  display: none;
+  top: -200px;
+  transition: all 1s ease-in-out;
 }
 
 .nav-link {
@@ -63,13 +68,6 @@ body {
   display: block;
   text-align: center;
   cursor: pointer;
-}
-
-.conversation {
-  position: fixed;
-  left: 2%;
-  bottom: 50px;
-  z-index: 999;
 }
 
 .gotop {
@@ -122,9 +120,6 @@ body {
   .gotop {
     right: 3%;
     bottom: 70px;
-  }
-  .conversation img {
-    width: 60%;
   }
 }
 @media (max-width: 576px) {

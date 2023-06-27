@@ -17,9 +17,14 @@ body {
     width: 100%;
     max-width: 45vw;
 }
-
+.navbar {
+    // top: 0;
+    transition: all 0.5s ease-in-out;
+}
 .navbar.bg {
-    display: none;
+    top: -200px;
+    transition: all 1s ease-in-out;
+    // display: none;
     // backdrop-filter: blur(10px);
     // -webkit-backdrop-filter: blur(10px);
     // box-shadow: 0 0 10px #306dc4;
@@ -89,12 +94,6 @@ body {
     cursor: pointer;
 }
 
-.conversation {
-    position: fixed;
-    left: 2%;
-    bottom: 50px;
-    z-index: 999;
-}
 .gotop {
     position: fixed;
     right: 4%;
@@ -155,10 +154,6 @@ body {
     .gotop {
         right: 3%;
         bottom: 70px;
-    }
-
-    .conversation img {
-        width: 60%;
     }
 }
 

@@ -5,7 +5,6 @@
   width: fit-content;
   position: relative;
   margin: 0 auto;
-  z-index: -1;
 }
 
 .animation-bg {
@@ -14,11 +13,26 @@
   overflow: hidden;
 }
 
+.animation-bg-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .animation-label {
   position: absolute;
-  width: 968px;
+  width: 900px;
   max-width: 50%;
-  top: 17%;
+  top: 10%;
+}
+
+.animation-content {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: -5%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .animation-shadow::after {
@@ -348,9 +362,20 @@
     opacity: 0.2;
   }
 }
+.conversation {
+  position: absolute;
+  left: 2%;
+  bottom: 25%;
+  z-index: 999;
+}
+
+.conversation img {
+  width: 60%;
+}
+
 .wave-bg-box {
   position: absolute;
-  bottom: -39%;
+  bottom: -25%;
   z-index: -1;
 }
 
@@ -360,8 +385,8 @@
     max-height: 800px;
   }
   .animation-label {
-    max-width: 90%;
-    top: 15%;
+    max-width: 70%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, 0);
   }
@@ -374,7 +399,13 @@
     width: 100%;
     /* transform: translate(-8%, 0); */
     height: 75%;
-    top: 25%;
+    top: 20%;
+  }
+  .conversation {
+    top: 90%;
+  }
+  .conversation img {
+    width: 50%;
   }
   .wave-bg-box {
     top: 89%;
@@ -402,15 +433,20 @@
   .animation-bg {
     max-height: 400px;
   }
+  .animation-label {
+    top: 20%;
+  }
   .animation-content {
     height: 55%;
     top: 30%;
+  }
+  .wave-bg-box {
+    top: 80%;
   }
 }
 /* 首頁內容輪播區 */
 .carousel-container {
   /* position: relative; */
-  margin-top: 10rem;
 }
 
 .carousel-box {
@@ -436,6 +472,7 @@
   width: 93%;
   margin: 0 auto;
   padding-top: 9%;
+  padding-bottom: 15%;
 }
 
 .accordion {
@@ -657,7 +694,7 @@
     /* top: 100%; */
     /* left: 50%; */
     /* transform: translate(-50%, 0%); */
-    margin-top: 8rem;
+    margin-top: 3rem;
   }
   .carousel-bg {
     max-width: 88%;
@@ -720,9 +757,6 @@
   .carousel-bg {
     top: -4.5%;
   }
-  .carousel-container {
-    margin-top: 4rem;
-  }
   .slick-prev,
   .slick-next {
     top: 15%;
@@ -749,6 +783,6 @@
     font-size: min(max(1rem, 5vw), 2.5rem);
   }
   .accordion-body {
-    font-size: min(max(0.8rem, 4vw), 1.5rem);
+    font-size: min(max(0.8rem, 4vw), 1rem);
   }
 }/*# sourceMappingURL=index.css.map */
