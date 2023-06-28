@@ -67,25 +67,25 @@ $(document).ready(function () {
             });
 
             // 手機子選單效果
-            function updateNavitem() {
-                var windowWidth = $(window).width();
+            // function updateNavitem() {
+            //     var windowWidth = $(window).width();
 
-                $('.nav-link').each(function () {
-                    var $this = $(this);
-                    var hasDropdown = $this.next('.dropdown-menu').length > 0;
+            //     $('.nav-link').each(function () {
+            //         var $this = $(this);
+            //         var hasDropdown = $this.next('.dropdown-menu').length > 0;
 
-                    if (windowWidth > 1200 && hasDropdown) {
-                        $this.removeAttr('data-bs-toggle');
-                        $this.removeAttr('aria-expanded');
-                    } else if (windowWidth < 1200 && hasDropdown) {
-                        $this.attr('data-bs-toggle', 'dropdown');
-                        $this.attr('aria-expanded', 'false');
-                    }
-                });
-            }
+            //         if (windowWidth > 1200 && hasDropdown) {
+            //             $this.removeAttr('data-bs-toggle');
+            //             $this.removeAttr('aria-expanded');
+            //         } else if (windowWidth < 1200 && hasDropdown) {
+            //             $this.attr('data-bs-toggle', 'dropdown');
+            //             $this.attr('aria-expanded', 'false');
+            //         }
+            //     });
+            // }
 
-            $(window).on('resize', updateNavitem);
-            $(window).on('load resize', updateNavitem);
+            // $(window).on('resize', updateNavitem);
+            // $(window).on('load resize', updateNavitem);
         },
         error: function (xhr, status, error) {
             console.log('Error loading header:', error);

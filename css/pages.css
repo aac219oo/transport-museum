@@ -176,7 +176,7 @@ body {
 }
 @media (max-width: 768px) {
   .text-indent {
-    line-height: 2.3rem;
+    line-height: 2rem;
   }
   .fs-style {
     font-size: 1rem;
@@ -187,7 +187,10 @@ body {
 }
 @media (max-width: 576px) {
   .nav-img {
-    height: 20px;
+    height: 35px;
+  }
+  .content-area-label {
+    font-size: 1.3rem;
   }
   .content-area-label .btn-link {
     flex-basis: 150px;
