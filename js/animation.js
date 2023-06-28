@@ -2,7 +2,7 @@
 gsap.fromTo(
     '.animation-bg-line',
     {
-        opacity: 0.1, // 设置初始透明度为0
+        opacity: 0.5, // 设置初始透明度为0
         // y: '0%',
         scale: 1,
     },
