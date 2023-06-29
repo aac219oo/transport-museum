@@ -465,7 +465,7 @@
         top: 20%;
     }
     .conversation {
-        top: 90%;
+        top: 38%;
     }
     .conversation img {
         width: 50%;
@@ -507,6 +507,13 @@
     .animation-content {
         height: 55%;
         top: 30%;
+    }
+    .conversation {
+        text-align: left;
+        left: 4%;
+    }
+    .conversation img {
+        width: 40%;
     }
     .wave-bg-box {
         top: 80%;
@@ -813,7 +820,7 @@
         /* top: 100%; */
         /* left: 50%; */
         /* transform: translate(-50%, 0%); */
-        margin-top: 3rem;
+        // margin-top: 3rem;
     }
 
     .carousel-bg {
