@@ -19,6 +19,11 @@
   left: 0;
 }
 
+#canvas {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .animation-label {
   position: absolute;
   width: 900px;

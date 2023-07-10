@@ -92,8 +92,8 @@
             	color: "#FFFFFF",
             	opacity: 1.00,
             	manifest: [
-            		{src:"./js/images/港務背景動畫_HTML5 Canvas_atlas_1.png", id:"港務背景動畫_HTML5 Canvas_atlas_1"},
-            		{src:"./js/images/港務背景動畫_HTML5 Canvas_atlas_2.png", id:"港務背景動畫_HTML5 Canvas_atlas_2"}
+            		{src:"./images/港務背景動畫_HTML5 Canvas_atlas_1.png", id:"港務背景動畫_HTML5 Canvas_atlas_1"},
+            		{src:"./images/港務背景動畫_HTML5 Canvas_atlas_2.png", id:"港務背景動畫_HTML5 Canvas_atlas_2"}
             	],
             	preloads: []
             };
@@ -236,7 +236,7 @@
             		createjs.Ticker.addEventListener("tick", stage);
             	}
             	//Code to support hidpi screens and responsive scaling.
-            	AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);
+            	AdobeAn.makeResponsive(true,'both',true,2,[canvas,anim_container,dom_overlay_container]);
             	AdobeAn.compositionLoaded(lib.properties.id);
             	fnStartAnimation();
             }
