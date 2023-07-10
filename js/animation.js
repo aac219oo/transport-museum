@@ -1,21 +1,21 @@
 // 使用 GSAP 庫設定動畫
-gsap.fromTo(
-    '.animation-bg-line',
-    {
-        opacity: 0.5, // 设置初始透明度为0
-        // y: '0%',
-        scale: 1,
-    },
-    {
-        opacity: 1, // 设置目标透明度为1
-        // y: '-2%',
-        scale: 1.02,
-        duration: 4, // 动画持续时间
-        repeat: -1, // 无限循环
-        ease: 'power1.inOut',
-        yoyo: true, // 反向播放动画
-    }
-);
+// gsap.fromTo(
+//     '.animation-bg-line',
+//     {
+//         opacity: 0.5, // 设置初始透明度为0
+//         // y: '0%',
+//         scale: 1,
+//     },
+//     {
+//         opacity: 1, // 设置目标透明度为1
+//         // y: '-2%',
+//         scale: 1.02,
+//         duration: 4, // 动画持续时间
+//         repeat: -1, // 无限循环
+//         ease: 'power1.inOut',
+//         yoyo: true, // 反向播放动画
+//     }
+// );
 
 gsap.to('.animation-app', {
     duration: 1.5, // 動畫持續時間（以秒為單位）
